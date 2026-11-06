@@ -187,6 +187,31 @@ a:hover { color: var(--red); }
 .footer a { color: var(--ink-soft); }
 .footer a:hover { color: var(--red-deep); }
 
+/* ---------- Formular ---------- */
+
+.form { max-width: 640px; margin-top: 1.5rem; }
+.field { margin-bottom: 1.25rem; }
+.field label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+.field .hint { font-weight: 400; color: var(--ink-soft); font-size: 0.9rem; }
+.field input[type="text"],
+.field input[type="email"],
+.field textarea {
+  width: 100%; font: inherit; color: var(--ink); background: var(--paper);
+  border: 2px solid var(--ink-soft); border-radius: 3px; padding: 0.7rem 0.8rem; min-height: 48px;
+}
+.field textarea { min-height: 170px; resize: vertical; }
+.field.consent { display: flex; gap: 0.75rem; align-items: flex-start; }
+.field.consent input { flex: none; width: 22px; height: 22px; margin-top: 0.2rem; accent-color: var(--red); }
+.field.consent label { font-weight: 400; margin: 0; max-width: 56ch; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.status { margin: 1rem 0 0; min-height: 1.6em; }
+.status.ok { padding: 0.9rem 1.1rem; border-left: 4px solid #1a7f37; background: var(--tint); }
+.status.error { padding: 0.9rem 1.1rem; border-left: 4px solid var(--red); background: var(--tint); }
+.form .btn { cursor: pointer; font-family: inherit; }
+.form .btn:disabled { opacity: 0.6; cursor: wait; }
+
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+
 /* ---------- Mobil ---------- */
 
 @media (max-width: 820px) {
